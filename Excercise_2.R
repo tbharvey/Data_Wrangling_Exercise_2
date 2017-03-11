@@ -42,4 +42,4 @@ ex2_frame$cabin <- sub("^$", NA_character_, ex2_frame$cabin)
 
 ex2_frame$has_cabin_number <- ifelse(is.na(ex2_frame$cabin), "0", "1")
 
-titanic_clean.csv <- write.csv(ex2_frame)
+write.csv(ex2_frame, file = "titanic_clean.csv")
